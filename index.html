@@ -6,7 +6,7 @@
     <title>Menu</title>
     <link rel="icon" type="image/x-icon" href="assets/home.ico">
     <style>
-        /* Stili di base per il corpo */
+
         body {
             margin: 0;
             font-family: 'Arial', sans-serif;
@@ -16,10 +16,10 @@
             align-items: center;
             height: 100vh;
             color: #333;
-            overflow: hidden; /* Nascondi overflow per il banner */
+            overflow: hidden;
         }
 
-        /* Contenitore del banner */
+
         .banner-container {
             position: absolute;
             top: 0;
@@ -30,29 +30,29 @@
             align-items: center;
         }
 
-        /* Banner di avviso con forma di freccia */
+   
         .alert-banner {
             background-color: #95d61b;
             color: #333;
             font-weight: bold;
             font-size: 2rem;
-            padding: 1rem 2rem; /* Aggiunto padding orizzontale */
+            padding: 1rem 2rem; 
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
             white-space: nowrap;
             animation: scroll 45s linear infinite;
-            position: relative; /* Necessario per il pseudo-elemento */
-            border-radius: 0 10px 10px 0; /* Angoli arrotondati a destra */
+            position: relative; 
+            border-radius: 0 10px 10px 0; 
         }
 
         .alert-banner::before {
             content: '';
             position: absolute;
-            left: -20px; /* Posiziona la punta della freccia */
+            left: -20px;
             top: 50%;
             transform: translateY(-50%);
             border-top: 20px solid transparent;
             border-bottom: 20px solid transparent;
-            border-right: 20px solid #95d61b; /* Colore della freccia */
+            border-right: 20px solid #95d61b; 
         }
 
         @keyframes scroll {
@@ -60,10 +60,10 @@
             100% { transform: translateX(-100%); }
         }
 
-        /* Contenitore del menu */
+  
         .menu-container {
             text-align: center;
-            margin-top: 80px; /* Margine per evitare sovrapposizioni con il banner */
+            margin-top: 80px;
         }
 
         .menu {
@@ -74,7 +74,7 @@
             margin: auto;
         }
 
-        /* Pulsanti del menu */
+ 
         .menu-button {
             display: inline-block;
             padding: 1rem 2rem;
@@ -89,21 +89,20 @@
             border: 1px solid transparent;
         }
 
-        /* Effetto hover */
+
         .menu-button:hover {
             background: linear-gradient(145deg, #0056b3, #003d80);
             transform: scale(1.05);
             box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
         }
 
-        /* Effetto focus */
+
         .menu-button:focus {
             outline: none;
             border: 1px solid #0056b3;
             box-shadow: 0 0 0 4px rgba(0, 91, 255, 0.2);
         }
 
-        /* Stili per i dispositivi mobili */
         @media (max-width: 600px) {
             .menu-button {
                 font-size: 1rem;
